@@ -53,11 +53,89 @@ body {
     z-index: -3;
 }
 
+/* delete dot before all list */
+ul {
+    /* list-style-type: some different list styles circle, square, upper-roman, lower-alpha...*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .photo img{
     margin-top: 27px;
     margin-left: 36px;
     width: 18.2%;
     border-radius: 50%;
-    
+
     z-index: 1;
 }
+
+/* header { */
+    /* display: flex; */
+    /* space-between: Items will have space between them */
+    /* justify-content: space-between; */
+/* } */
+
+
+/*------------------------------------------------------
+    #instructions:  HomePage navigation part
+                    display none first 
+                    show after click the menu
+                    
+    #Parameters:    .menu: menu bar buttom img
+                    #HomePageNav ul: navigetion list
+                    .exit: close img
+------------------------------------------------------*/
+.menu {
+    width: 20px;
+    height: 20px;
+}
+
+#HomePageNav ul {
+    /* keep the navigation stuck in one place when you scroll the interface */
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    top: 0;
+    right: 0;
+
+    text-align: left;
+    background-color: #202020;
+    
+    z-index: 10;
+}
+
+.exit {
+    margin-top: 27px;
+    margin-right: 17px;
+    text-align: right;
+    height: 48px;
+}
+
+.exit img{
+    width: 20px;
+    height: 20px;
+}
+
+#HomePageNav ul li a {
+    color: #CCCCCC;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 23px 12.3%;
+    font-weight: bold;
+    font-size: 23;
+    background-color: #363636;
+}
+
+#HomePageNav ul li a:hover {
+    background-color: #515157;
+}
+
+.hide-menu {
+    display: none;
+}
+
+
