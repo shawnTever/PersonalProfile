@@ -121,7 +121,7 @@ ul {
     width: 100%;
     padding: 23px 12.3%;
     font-weight: bold;
-    font-size: 23;
+    font-size: medium;
     background-color: #363636;
 }
 
@@ -185,33 +185,118 @@ ul {
 .sayHi {
     margin-top: 12.2%;
     margin-right: 17px;
+}
+
+.sayHi img {
     height: 25px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 875px) {
     .menu {
         display: none;
     }
+
+    /*------------------------------------------------------
+    #instructions:  HomePage navigation part in large screen       
+    
+    #Parameters:    
+    ------------------------------------------------------*/
     .show-desktop {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .exit {
+        display: none;
     }
 
     #HomePageNav ul {
-        position: inherit;
-        width: auto;
-        background: none;
+        width: 57%;
         height: auto;
-        display: none;
-        padding-top: 0;
+        margin-top: 2%;
+        margin-right: 3%;
+    
+        text-align: left;
+        background: none;
     }
-    #HomePageNav li {
-        float: left;
-    }
+
     #HomePageNav ul li a {
-        color: black;
-        background-color: inherit;
-        text-align: right;
-        padding: 1em 2em;
+        padding: 0;
+        font-size: small;
+        font-weight: 700;
+        background: none;
+    }
+
+    #HomePageNav ul li a:hover {
+        background: none;
+    }
+
+    /*------------------------------------------------------
+    #instructions:  HomePage photo and part intro
+                    in large screen       
+    
+    #Parameters:    
+    ------------------------------------------------------*/
+    .photo img{
+        margin-top: 5%;
+        margin-left: 7.3%;
+        width: 12%;    
+    }
+    
+    .name {
+        font-size: x-large;
+        font-weight: 700;
+        margin-top: 3%;
+        margin-left: 7.3%;
+        text-align: left;
+        width: 13.5%;
+    }
+    
+    .introduction {
+        font-weight: 500;
+        font-size: large;
+        margin-top: 3%;
+        margin-right: 3%;
+        width: 50%;
+    }
+    
+    .contract {
+        font-size: small;
+        font-style: italic;
+        font-weight: 500;
+        width: 29.6%;
+        margin-top: 2%;
+        margin-left: 7.3%;
+    }
+    
+    .sayHi {
+        margin-top: 2%;
+        margin-right: 5%;        
+    }
+    
+    .sayHi img {
+        height: 35px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #HomePageNav ul li a {
+        font-size: larger;
+    }
+
+    .photo img{
+        width: 10%;    
+    }
+    
+    .name {
+        width: 12%;
+    }
+    
+    .contract {
+        font-size: medium;
+    }
+
+    .sayHi img {
+        height: 50px;
     }
 
 }
