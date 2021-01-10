@@ -5,6 +5,7 @@ body {
 
 .background {
     position: relative;
+    
 
     /* min-height: Set the minimum height of a element */
     min-height: 100%;
@@ -12,11 +13,6 @@ body {
     position: fixed;
 
     z-index: -1;
-    
-    
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .background::before {
@@ -62,20 +58,13 @@ ul {
 }
 
 .photo img{
-    margin-top: 27px;
-    margin-left: 36px;
+    margin-top: 11.6%;
+    margin-left: 9.6%;
     width: 18.2%;
     border-radius: 50%;
 
     z-index: 1;
 }
-
-/* header { */
-    /* display: flex; */
-    /* space-between: Items will have space between them */
-    /* justify-content: space-between; */
-/* } */
-
 
 /*------------------------------------------------------
     #instructions:  HomePage navigation part
@@ -87,8 +76,14 @@ ul {
                     .exit: close img
 ------------------------------------------------------*/
 .menu {
-    width: 20px;
-    height: 20px;
+    float: right;
+    margin-top: 27px;
+    margin-right: 17px;
+}
+
+.menu img{
+    width: 25px;
+    height: 19.87px;
 }
 
 #HomePageNav ul {
@@ -138,4 +133,85 @@ ul {
     display: none;
 }
 
+/*------------------------------------------------------
+    #instructions:  information part
+                    include: name, contract info,
+                             introduction and 
+                             connection button  
+                    
+    #Parameters:    .information: all information part
+                    .name: name
+                    .introduction: introduction
+                    .contract: contract
+                    .sayHi: Say Hi! buttom
+------------------------------------------------------*/
+.information {
+    color: white;
+    display: flex;
+    /* space-between: Items will have space between them */
+    justify-content: space-between;
+}
 
+.name {
+    font-size: large;
+    font-weight: 700;
+    margin-top: 8.62%;
+    margin-left: 9.6%;
+    width: 18.7%;
+}
+
+.introduction {
+    font-style: italic;
+    font-weight: 500;
+    font-size: medium;
+    color: #CCCCCC;
+    margin-top: 8.62%;
+    margin-right: 17px;
+    width: 45.3%;
+}
+
+.contract {
+    font-size: x-small;
+    font-style: italic;
+    font-weight: 500;
+    width: 29.6%;
+    margin-top: 4.8%;
+    margin-left: 9.6%;
+    /* Handling Long Words and URLs */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.sayHi {
+    margin-top: 12.2%;
+    margin-right: 17px;
+    height: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    .show-desktop {
+        display: block;
+    }
+
+    #HomePageNav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: none;
+        padding-top: 0;
+    }
+    #HomePageNav li {
+        float: left;
+    }
+    #HomePageNav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+}

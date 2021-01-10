@@ -9,12 +9,19 @@
 <body>
     <div class="background">
         <header>
+<!--------------------------------------------------------
+    #instructions:  HomePage navigation
+                    
+    #Parameters:    HomePageNav: entire navigation
+                    menu: menu bar button img
+                    exit: close img
+-------------------------------------------------------->
             <nav id="HomePageNav">
-                <a href="#" class=" ">
-                    <img src="Picture/Home/menu bar button.png" alt="toggle menu" class="menu">
+                <a href="#"  class="menu" id="menu">
+                    <img src="Picture/Home/menu bar button.png" alt="toggle menu">
                 </a>
-                <ul class="hide-menu" id="nav">
-                    <li class="exit">
+                <ul class="hide-menu show-desktop" id="nav">
+                    <li class="exit" id="exit">
                         <img src="Picture/Home/close.png" alt="exit menu">
                     </li>
                     <li><a href="#">home </a></li>
@@ -24,12 +31,59 @@
                 </ul>
             </nav>
         </header>
+
+<!--------------------------------------------------------
+    #instructions:  photo img
+                    
+    #Parameters:    photo: photo img
+-------------------------------------------------------->
+
         <a href="#" class="photo">
             <img src="Picture/Home/photo.jpg" alt="photo">
         </a>
-        <p class="name">
-            Xiyong Tian
-        </p>
-    </div> 
+
+        <div class="information">
+            <p class="name">
+                Xiyong Tian
+            </p>
+
+            <p class="introduction">
+                Hi, this is Shawn. 
+                If you want to contact me, 
+                click the button and leave your email and message here. 
+                I‘ll respond to you as soon as possible.
+            </p>
+        </div>
+
+        <div class="information">
+            <p class="contract">
+                TEL: +86 135-5430-0257  
+                <br><br>
+                Email: tianoshawn@gmail.com
+                <br><br>
+                Australian National University
+            </p>
+            <a href="#" class="sayHi">
+                <img src="Picture/Home/HiButton.png" alt="Hi Button">
+            </a>
+        </div>
+    </div>
+    
+
+    
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-menu');
+            e.preventDefault();
+         });
+        exit.addEventListener('click', function (e) { 
+            nav.classList.toggle('hide-menu');
+            e.preventDefault();
+         })
+    </script>
 </body>
 </html>
