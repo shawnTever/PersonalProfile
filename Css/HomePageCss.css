@@ -191,7 +191,7 @@ ul {
     height: 25px;
 }
 
-@media only screen and (min-width: 875px) {
+@media only screen and (min-width: 768px) {
     .menu {
         display: none;
     }
@@ -221,7 +221,7 @@ ul {
 
     #HomePageNav ul li a {
         padding: 0;
-        font-size: small;
+        font-size: x-small;
         font-weight: 700;
         background: none;
     }
@@ -277,7 +277,11 @@ ul {
         height: 35px;
     }
 }
-
+@media only screen and (min-width: 875px) {
+    #HomePageNav ul li a {
+        font-size: small;
+    }
+}
 @media only screen and (min-width: 1200px) {
     #HomePageNav ul li a {
         font-size: larger;
