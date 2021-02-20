@@ -236,6 +236,7 @@ ul {
     #Parameters:    
     ------------------------------------------------------*/
     .userInfo {
+        font-size: large;
         margin-top: 25%;
     }
 
@@ -259,6 +260,7 @@ ul {
     #Parameters:    
     ------------------------------------------------------*/
     .userInfo {
+        font-size: larger;
         margin-top: 15%;
         margin-left: 5%;
     }
