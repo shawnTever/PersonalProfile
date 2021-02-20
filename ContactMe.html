@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ContractMe.css">
+    <title>Shawn Contract</title>
+</head>
+<body>
+    <div class="background">
+<!--------------------------------------------------------
+    #instructions:  Contract navigation
+                    
+    #Parameters:    HomePageNav: entire navigation
+                    menu: menu bar button img
+                    exit: close img
+-------------------------------------------------------->
+    <header>
+    <nav id="HomePageNav">
+        <a href="#"  class="menu" id="menu">
+            <img src="Picture/Home/menu bar button.png" alt="toggle menu">
+        </a>
+        <ul class="hide-menu show-desktop" id="nav">
+            <li class="exit" id="exit">
+                <img src="Picture/Home/close.png" alt="exit menu">
+            </li>
+            <li><a href="HomePage.html">home </a></li>
+            <li><a href="#">Personal Profile </a></li>
+            <li><a href="#">Experience and Project </a></li>
+            <li><a href="ContactMe.html">Contract Me</a></li>
+        </ul>
+    </nav>
+    </header>
+<!--------------------------------------------------------
+    #instructions:  user input
+                        
+    #Parameters:    
+---------------------------------------------------------->
+    <div class="information">
+        <form class="userInfo">
+            <p>Prefer Name: <br>
+            <input type="text" placeholder="leave your name here">
+            </p>
+            
+            <p>Email: <br>
+            <input type="text" placeholder="leave your email here">
+            </p>
+        </form>
+
+        <a href="#" class="ContractShawn">
+        <img src="Picture/Home/ContractShawn.png" alt="ContractShawn Button">
+        </a>
+    </div> 
+
+<!--------------------------------------------------------
+    #instructions:  toggle navigation
+                        
+    #Parameters:    nav: entire navigation
+                    menu: menu bar button img
+                    exit: close img
+---------------------------------------------------------->
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-menu');
+            e.preventDefault();
+         });
+        exit.addEventListener('click', function (e) { 
+            nav.classList.toggle('hide-menu');
+            e.preventDefault();
+         })
+    </script>
+    
+</body>
+</html>
