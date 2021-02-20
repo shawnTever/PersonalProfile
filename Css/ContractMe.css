@@ -159,8 +159,10 @@ ul {
 }
 
 .ContractShawn {
-    margin-top: 80%;
-    
+    height: 25px;
+    background: none;
+    margin-top: 50%;  
+    cursor: pointer;  
 }
 
 .ContractShawn img {

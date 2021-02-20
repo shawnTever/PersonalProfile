@@ -39,18 +39,55 @@
     <div class="information">
         <form class="userInfo">
             <p>Prefer Name: <br>
-            <input type="text" placeholder="leave your name here">
+            <input type="text" id="preferName" placeholder="leave your name here">
             </p>
             
             <p>Email: <br>
-            <input type="text" placeholder="leave your email here">
+            <input type="text" id="userEmail" placeholder="leave your email here">
             </p>
         </form>
 
-        <a href="#" class="ContractShawn">
-        <img src="Picture/Home/ContractShawn.png" alt="ContractShawn Button">
+        <a href="#" onclick="writeData()" class="ContractShawn">
+            <img src="Picture/Home/ContractShawn.png" alt="ContractShawn Button">
         </a>
     </div> 
+
+<!--------------------------------------------------------
+    #instructions:  Firebase SDK
+                    click the button 
+                    then send the message to firebase
+    #Parameters:    
+---------------------------------------------------------->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAIbYIk8q2isSMAPE_I9nPf5kULaHyCju0",
+    authDomain: "shawn-personalprofile.firebaseapp.com",
+    databaseURL: "https://shawn-personalprofile-default-rtdb.firebaseio.com",
+    projectId: "shawn-personalprofile",
+    storageBucket: "shawn-personalprofile.appspot.com",
+    messagingSenderId: "1074078861995",
+    appId: "1:1074078861995:web:e6a456527f73f8ecb445ee"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    
+    function writeData() {
+        firebase.database().ref("User").set({
+            name: document.getElementById("preferName").value,
+            Email: document.getElementById("userEmail").value
+        })
+        alert("massage has sent!");
+    }
+    
+    </script>
 
 <!--------------------------------------------------------
     #instructions:  toggle navigation
