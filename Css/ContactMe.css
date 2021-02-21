@@ -59,7 +59,7 @@ ul {
 }
 
 /*------------------------------------------------------
-    #instructions:  Contract navigation part
+    #instructions:  Contact navigation part
                     display none first 
                     show after click the menu
                     
@@ -158,14 +158,14 @@ ul {
     font-size: small;
 }
 
-.ContractShawn {
+.ContactShawn {
     height: 25px;
     background: none;
     margin-top: 50%;  
     cursor: pointer;  
 }
 
-.ContractShawn img {
+.ContactShawn img {
     height: 25px;
 }
 
@@ -216,12 +216,12 @@ ul {
     .userInfo {
         margin-top: 35%;
     }
-    .ContractShawn {
+    .ContactShawn {
         margin-top: 40%;
         margin-right: 15%;
     }
     
-    .ContractShawn img {
+    .ContactShawn img {
         height: 40px;
     }
 
@@ -242,12 +242,12 @@ ul {
         margin-top: 25%;
     }
 
-    .ContractShawn {
+    .ContactShawn {
         margin-top: 30%;
         margin-right: 15%;
     }
     
-    .ContractShawn img {
+    .ContactShawn img {
         height: 40px;
     }
 }
@@ -267,12 +267,12 @@ ul {
         margin-left: 5%;
     }
 
-    .ContractShawn {
+    .ContactShawn {
         margin-top: 20%;
         margin-right: 20%;
     }
     
-    .ContractShawn img {
+    .ContactShawn img {
         height: 50px;
     }
 

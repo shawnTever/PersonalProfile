@@ -135,14 +135,14 @@ ul {
 
 /*------------------------------------------------------
     #instructions:  information part
-                    include: name, contract info,
+                    include: name, Contact info,
                              introduction and 
                              connection button  
                     
     #Parameters:    .information: all information part
                     .name: name
                     .introduction: introduction
-                    .contract: contract
+                    .Contact: Contact
                     .sayHi: Say Hi! buttom
 ------------------------------------------------------*/
 .information {
@@ -170,7 +170,7 @@ ul {
     width: 45.3%;
 }
 
-.contract {
+.Contact {
     font-size: x-small;
     font-style: italic;
     font-weight: 500;
@@ -259,7 +259,7 @@ ul {
         width: 50%;
     }
     
-    .contract {
+    .Contact {
         font-size: small;
         font-style: italic;
         font-weight: 500;
@@ -295,7 +295,7 @@ ul {
         width: 12%;
     }
     
-    .contract {
+    .Contact {
         font-size: medium;
     }
 
